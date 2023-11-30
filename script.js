@@ -33,9 +33,26 @@ setTimeout(function() {
         arrayUserNum.push(userNum);
     }
 
+    console.log(`Array user number: ${arrayUserNum}`);   
+    console.log(`Array random number: ${arrayRandomNum}`); 
+
+    // ...
+
+    // Verifica se tutti gli elementi di arrayRandomNum sono presenti in arrayUserNum
+    const check = arrayRandomNum.every(function(randomNum) {
+        return arrayUserNum.includes(randomNum);
+    });
+
+    // Stampa il risultato
+    if (check) {
+        console.log("Tutti gli elementi di arrayRandomNum sono presenti in arrayUserNum.");
+    } else {
+        console.log("Non tutti gli elementi di arrayRandomNum sono presenti in arrayUserNum.");
+    }
+
+
+
 }, 3000)
-
-
 
 
 
@@ -77,3 +94,4 @@ function randomNumbMinMax (min, max) {
 // dopo 30 secondoi far scomparire i numeri OK
 // dopo 30s far apparire un prompt per 5 volte OK
 // creare array usernum OK
+// check se array random number = array user number
