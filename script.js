@@ -18,6 +18,9 @@ const containerRandomNumber = document.querySelector(".number");
 // show on screen
 containerRandomNumber.innerHTML = arrayRandomNum;
 
+// array user number
+const arrayUserNum = [];
+
 // after 30s
 setTimeout(function() {
 
@@ -26,11 +29,15 @@ setTimeout(function() {
 
     // prompt user num 
     for (let i = 0; i < 5; i++) {
-        let userNum = parseInt(prompt("Inserisci qui i numeri"));
-        console.log(userNum);
+        userNum = parseInt(prompt("Inserisci qui i numeri"));
+        arrayUserNum.push(userNum);
     }
 
 }, 3000)
+
+
+
+
 
 
 
@@ -69,3 +76,4 @@ function randomNumbMinMax (min, max) {
 // mostrare in display array random OK
 // dopo 30 secondoi far scomparire i numeri OK
 // dopo 30s far apparire un prompt per 5 volte OK
+// creare array usernum OK
