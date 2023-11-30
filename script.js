@@ -9,8 +9,14 @@ for (let i = 0; i < 5; i++) {
 
     //push randomNum nell'array
     arrayRandomNum.push(randomNum);
-   
+
 }
+
+// selection element
+const containerRandomNumber = document.querySelector(".number");
+
+// show on screen
+containerRandomNumber.innerHTML = arrayRandomNum;
 
 
 
@@ -48,4 +54,5 @@ function randomNumbMinMax (min, max) {
 //general instructions
 
 //generation 5 random number OK
-// creazione di un array con quei 5 numeri
+// creazione di un array con quei 5 numeri OK
+// mostrare in display array random OK
