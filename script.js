@@ -1,9 +1,22 @@
+// array random number
+const arrayRandomNum = [];
+
 // generation 5 random number
 for (let i = 0; i < 5; i++) {
     // call function
-    const randomNum = randomNumbMinMax(1, 100);
+    randomNum = randomNumbMinMax(1, 100);
     // console.log(randomNum);
+
+    //push randomNum nell'array
+    arrayRandomNum.push(randomNum);
+   
 }
+
+
+
+
+
+
 
 
 
@@ -34,5 +47,5 @@ function randomNumbMinMax (min, max) {
 
 //general instructions
 
-//generation 5 random number
-// mostrare questi numeri in console
+//generation 5 random number OK
+// creazione di un array con quei 5 numeri
